@@ -1,6 +1,0 @@
-<form enctype="multipart/form-data" action="/site/Services/upload" method="POST">
-    <!-- MAX_FILE_SIZE must precede the file input field -->
-    <!-- Name of input element determines name in $_FILES array -->
-    Send this file: <input name="Filedata" type="file" />
-    <input type="submit" value="Send File" />
-</form>
