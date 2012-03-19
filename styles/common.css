@@ -1,0 +1,9 @@
+.welcome_con {
+	width: auto;
+	padding: 20px;
+	margin: 15px 40px;
+	background: #FFF left repeat-y;
+	border: 1px solid #999999;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+}
