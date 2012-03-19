@@ -1,7 +1,7 @@
 <?php 
 /**
-* 
-*/
+ * Tinge
+ */
 include ROOT_PATH . "/Api/Sina/saetv2.ex.class.php";
 class Api extends SiteAction {
 	protected $sina = null;//调用新浪接口变量

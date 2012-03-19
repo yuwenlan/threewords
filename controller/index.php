@@ -1,4 +1,7 @@
 <?php
+/**
+ * Tinge
+ */
 class Action extends Api
 {
     function index()
@@ -7,11 +10,14 @@ class Action extends Api
             $this->sina_bind();
         }
 
-        $this->display('default.html');
+        $info = $this->sina->show_user_by_id($_SESSION['user']['token']['uid']);
+        $this->display('default.html', array(
+            'info'=>$info,
+        ));
 
-        // $ms = $this->sina->home_timeline();
+        //$ms = $this->sina->home_timeline();
         // echo '<pre>';
-        // print_r($ms);
+        // print_r($info);
     }
 }
 ?>
