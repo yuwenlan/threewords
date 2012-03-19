@@ -1,0 +1,58 @@
+<?php
+
+/*
+ * This file is part of the Geek-Zoo Projects.
+ *
+ * @copyright (c) 2010 Geek-Zoo Projects More info http://www.geek-zoo.com
+ * @license http://opensource.org/licenses/gpl-2.0.php The GNU General Public License
+ * @author xuanyan <xuanyan@geek-zoo.com>
+ *
+ */
+class Action extends SiteAction
+{
+    function test()
+	{
+		echo 2;
+	}
+
+    function index()
+    {
+            setlocale(LC_ALL, null);
+            if (($handle = fopen(ROOT_PATH."/sss.csv", "r")) !== FALSE) {
+            while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+                print_r($data);
+            }
+            fclose($handle);
+        }
+    }
+}
+
+// $menu = array(
+//     'key' => array(
+//         'name' =>
+//         'url'  =>
+//     )
+//     
+// );
+// 
+// $m = Menu::create();
+// 
+// 
+// 
+// 
+// $m = Menu::create($key, $name, $url);
+// 
+// $m->addSub(Menu::create($key, $name, $url));
+// 
+// $m->addSub(Menu::create($key, $name, $url));
+// 
+// $m = new Menu();
+// 
+// $menu = $m->create($key, $name, $url);
+// 
+// $menu->addSub
+// 
+// $m->addMenu($key, $name, $url);
+// 
+// $m->addSub()
+?>
