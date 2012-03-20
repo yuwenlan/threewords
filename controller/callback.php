@@ -1,6 +1,6 @@
 <?php
 /**
-* 
+* Tinge
 */
 class Action extends Api {
 	function index() {
