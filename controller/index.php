@@ -16,8 +16,7 @@ class Action extends Api
         }
 
         //$ms = $this->sina->home_timeline();
-        // echo '<pre>';
-        // print_r($info);
+        
     }
 
     public function welcome() {
