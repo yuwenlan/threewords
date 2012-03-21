@@ -9,5 +9,11 @@ class Action extends Api
         $this->display('settings.html');  
     }
 
+    function create()
+    {	
+    	$result = $_POST['email'];
+        echo $result;  
+    }
+
 }
 ?>

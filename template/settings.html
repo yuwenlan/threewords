@@ -1,0 +1,47 @@
+{extends file='layout/main.html'}
+{block name="main"}
+<div>
+	<div>name:<input type="text" name="name" class='name'/></div>
+	<div>pwd: <input type="password" name="pwd" class='pwd'/></div>
+	<div>email:<input type="text" name="email" class='email'/></div>
+	<div><input type="button" value="提交" class='button'/></div>
+</div> 		
+
+<script type="text/javascript">
+			var emailReg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+			$(".button").click(function(){
+				var name = $('.name').val();
+				var pwd = $('.pwd').val();
+				var email = $('.email').val();
+				if(!name){
+					alert('姓名不能为空');
+					return false;
+				}
+
+				if(!pwd){
+					alert('密码不能为空');
+					return false;
+				}
+
+				if(!email){
+					alert('邮箱不能为空');
+					return false;
+				}
+					       
+				if (!emailReg.test(email)){
+	  				alert('邮箱格式不正确！！');
+	  				return false;
+	 			}
+
+	 			$.post("settings/create", { 'name':name,'pwd':pwd,'email':email},function(data){
+					if(data){
+						alert(data);
+					}else{
+						alert("error");
+						return false;
+					}
+				});
+			});
+		</script>
+
+{/block}
