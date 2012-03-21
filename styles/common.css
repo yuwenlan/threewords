@@ -7,3 +7,30 @@
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 }
+
+.left {
+	width: 625px;
+	background: red;
+}
+
+.right {
+	width: 348px;
+	background: green;
+}
+
+.three_list {
+	width: 605px;
+	padding: 10px;
+	background: pink;
+}
+.people {
+	width: 605px;
+	height: 50px;
+	line-height: 50px;
+}
+.threewords {
+	width: 605px;
+	height: 50px;
+	padding: 10px;
+	line-height: 50px;
+}

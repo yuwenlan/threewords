@@ -1,11 +1,22 @@
 {extends file='layout/main.html'}
 {block name="main"}
-{$info.id}<br />
-{$info.avatar_large}<br />
-{$info.description}<br />
-{$info.location}<br />
-{$info.friends_count}
+
+<div class="left fl">
+	<div class="three_list">
+		<div class="people">
+			<img src="{$info.profile_image_url}" />({$info.screen_name})评价<img src="{$info.profile_image_url}">({$info.screen_name})
+		</div>
+		<div class="threewords">
+			<h3 class="words"></h3><h3 class="words"></h3><h3 class="words"></h3>
+		</div>
+	</div>
+</div>
+<div class="right fl">
+	b
+</div>
+
 <script type="text/javascript">
 
 </script>
+
 {/block}
