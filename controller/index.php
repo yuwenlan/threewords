@@ -21,9 +21,7 @@ class Action extends Api
                 'info'=>$info,
             ));
         }
-
         //$ms = $this->sina->home_timeline();
-        
     }
 
     public function welcome() {
